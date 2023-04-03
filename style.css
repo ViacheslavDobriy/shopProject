@@ -281,6 +281,7 @@ img {
     }
     .top__content {
         padding: 148px 56px;
+        justify-content: center;
     }
     .top__content__image {
         display: none;
@@ -312,6 +313,10 @@ img {
         flex-direction: column;
         padding-bottom: 64px;
     }
+    .offer__item {
+        display: flex;
+        justify-content: center;
+    }
     .offer_img {
         min-height: 111px;
     }
@@ -326,6 +331,9 @@ img {
     .goods__frame {
         grid-template-columns: repeat(1, 1fr);
         gap: 16px;
+    }
+    .goods {
+        max-width: 350px;
     }
     .goods__description {
         padding: 25px 28px 20px 16px;
