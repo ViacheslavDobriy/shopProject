@@ -525,6 +525,7 @@ img {
     .products {
         padding-left: 8px;
         padding-right: 8px;
+        padding-bottom: 96px;
     }
     .products__all__texts {
         gap: 3px;
@@ -549,7 +550,39 @@ img {
     .open__more {
         margin-top: 40px;
     }
-    .products {
-        padding-bottom: 85px;
+    .footer__center {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+    .list__benefits {
+        flex-direction: column;
+        padding-top: 48px;
+        padding-bottom: 81px;
+    }
+    .contact__us {
+        flex-direction: column;
+        padding-bottom: 110px;
+    }
+    .quote {
+        margin-top: 64px;
+        margin-bottom: 59px;
+    }
+    .insert__section {
+        margin-top: 22px;
+        min-width: 341px;
+        justify-content: space-between;
+    }
+    .subscribe {
+        min-width: 245px;
+    }
+    .ending {
+        flex-direction: column-reverse;
+    }
+    .social__network {
+        padding-top: 43px;
+        padding-bottom: 40px;
+    }
+    .copyright {
+        padding-bottom: 9px;
     }
 }
