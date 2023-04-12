@@ -259,6 +259,9 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .quote {
@@ -418,7 +421,7 @@ img {
         gap: 19px;
     }
     .products {
-        padding-bottom: 70px;
+        padding-bottom: 64px;
     }
     .products__all__texts {
         padding-bottom: 72px;
@@ -440,6 +443,30 @@ img {
     .open__more {
         margin-top: 32px;
         padding: 15px 39px 14px 39px;
+    }
+    .list__benefits {
+        padding-bottom: 64px;
+        padding-top: 48px;
+        gap: 48px;
+        flex-direction: column;
+    }
+    .footer__center {
+        padding-left: 204px;
+        padding-right: 204px;
+    }
+    .contact__us {
+        flex-direction: column;
+    }
+    .quote {
+        margin-top: 64px;
+        margin-bottom: 48px;
+    }
+    .subscribe__area {
+        padding-bottom: 140px;
+    }
+    .ending {
+        padding-left: 32px;
+        padding-right: 32px;
     }
 }
 
