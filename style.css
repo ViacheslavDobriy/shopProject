@@ -33,6 +33,25 @@ body {
     gap: 33px;
 }
 
+.header__link {
+    position: relative;
+}
+
+.new__item::before {
+    content: '5';
+    position: absolute;
+    top: -7px;
+    left: 27px;
+    background-color: red;
+    color: white;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .top__content {
     display: flex;
     background: #F1E4E6;
@@ -84,6 +103,11 @@ body {
 
 .offer__item {
     position: relative;
+    transition: 1s;
+}
+
+.offer__item:hover {
+    transform: scale(1.1);
 }
 
 img {
@@ -164,6 +188,46 @@ img {
 
 .goods {
     background: #F8F8F8;
+    position: relative;
+}
+
+.goods__look {
+    transition: 0.5s;
+}
+
+.goods__look:hover {
+    filter: brightness(50%)
+}
+
+.goods:hover .add__to__cart {
+    display: flex;
+}
+
+.add__to__cart {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    max-width: 116px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    border: solid 1px;
+    border-color: white;
+    padding: 4px 14px;
+    display: none;
+}
+
+.add__to__cart:hover {
+    display: block;
+}
+
+.text_add {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
 }
 
 .goods__description {
@@ -208,6 +272,12 @@ img {
     background-color: white;
     border-color: #f26376;
     margin-top: 48px;
+    transition: 0.5s;
+}
+
+.open__more:hover {
+    background-color: #f26376;
+    color: white;
 }
 
 .footer {
@@ -381,6 +451,12 @@ img {
     min-height: 32px;
     display: flex;
     justify-content: center;
+    transition: 0.3s;
+}
+
+.network:hover {
+    background-color: #F16D7F;
+    color: white;
 }
 
 .social__network {
