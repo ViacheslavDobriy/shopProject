@@ -325,7 +325,7 @@ img {
 }
 
 .contact__us {
-    background-image: url(img/background__footer.svg);
+    background-image: url(img/background_light.png);
     display: flex;
     justify-content: space-between;
     align-items: center;
