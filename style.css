@@ -7,9 +7,8 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-.center {
-  padding-left: calc(50% - 570px);
-  padding-right: calc(50% - 570px);
+a {
+  text-decoration: none;
 }
 
 .header {
@@ -462,6 +461,131 @@ img {
 .social__network {
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.center {
+  padding-left: calc(50% - 570px) !important;
+  padding-right: calc(50% - 570px) !important;
+}
+
+.product {
+  width: 360px;
+}
+.product__content {
+  background-color: #F8F8F8;
+  padding: 24px 16px;
+}
+
+.header {
+  background-color: #222;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  gap: 41px;
+}
+
+.top_head {
+  background: #f8f3f4;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-head__heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+}
+
+.breadcrumbs__link {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+}
+
+.breadcrumbs__link_site {
+  font-weight: 700;
+  color: #F16D7F;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 320px;
+  padding-top: 51px;
+  padding-bottom: 64px;
+}
+
+.filter_left {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 10px;
+}
+
+.caption {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.filter_center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 28px;
+}
+
+.filter_group {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.filter_title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.navigation_center {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+  margin-bottom: 96px;
+  border: 1px solid #EBEBEB;
+}
+
+.page-link {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #C4C4C4;
+  border: none;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
