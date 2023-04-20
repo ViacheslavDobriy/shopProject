@@ -1,9 +1,18 @@
 $colorSelectSite: #F16D7F;
 $widthSite: 1140px;
 $backBlock: #222;
+$colortext: #000;
 * {
     padding: 0;
     margin: 0;
+}
+
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
 }
 
 body {
@@ -522,50 +531,72 @@ img {
     color: $colorSelectSite;
 }
 
+.filter-sort {
+    height: 132px;
+    position: relative;
+}
+
 .filter {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 320px;
-    padding-top: 51px;
-    padding-bottom: 64px;
-}
-
-.filter_left {
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-    gap: 10px;
-}
-
-.caption {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-}
-
-.filter_center {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 28px;
-}
-
-.filter_group {
-    display: flex;
-    gap: 10px;
-    align-items: baseline;
-}
-
-.filter_title {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #6F6E6E;
+    padding: 13px 16px 16px;
+    width: 360px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 39px;
+    z-index: 1;
+    &[open] {
+        background: #FFFFFF;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+    &[open] .filter__heading {
+        color: $colorSelectSite;
+    }
+    &[open] path {
+        fill: $colorSelectSite;
+    }
+    &__summary {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+    }
+    &__heading {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: $colortext;
+    }
+    &__item {
+        margin-top: 16px;
+    }
+    &__head {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+        padding: 8px 11px 11px 11px;
+        border-bottom: 1px solid #EBEBEB;
+        border-left: 5px solid $colorSelectSite;
+    }
+    &__link-box {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        padding: 24px 16px;
+    }
+    &__link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+        &:hover {
+            color: $colorSelectSite;
+        }
+    }
+    &__item[open] .filter__head {
+        color: $colorSelectSite;
+    }
 }
 
 .navigation_center {
