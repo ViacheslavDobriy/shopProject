@@ -25,14 +25,22 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin-bottom: 0!important;
+}
+
+.center {
+    padding-left: calc(50% - $widthSite/2)!important;
+    padding-right: calc(50% - $widthSite/2)!important;
+}
+
 .box-content {
     overflow: hidden;
 }
 
 .header {
     position: relative;
-    background: #222222;
-    display: flex;
+    background-color: $backBlock;
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
@@ -226,7 +234,7 @@ a {
             position: absolute;
             top: 30%;
             left: 30%;
-            max-width: 116px;
+            max-width: 147px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -237,7 +245,7 @@ a {
             display: none;
         }
         &__label:hover {
-            display: block;
+            display: flex;
         }
         &__description {
             padding-top: 24px;
@@ -311,39 +319,36 @@ a {
     padding-right: 230px;
 }
 
-.list__benefits {
+.benefits {
     display: flex;
     align-items: center;
     padding-top: 104px;
     padding-bottom: 104px;
     gap: 30px;
-}
-
-.benefit {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.benefit__name {
-    margin-bottom: 16px;
-    margin-top: 28px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 19.96px;
-    line-height: 24px;
-    color: #FBFBFB;
-}
-
-.benefit__about {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 13.972px;
-    line-height: 17px;
-    text-align: center;
-    color: #FBFBFB;
+    &__item {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    &__name {
+        margin-bottom: 16px;
+        margin-top: 28px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19.96px;
+        line-height: 24px;
+        color: #FBFBFB;
+    }
+    &__about {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13.972px;
+        line-height: 17px;
+        text-align: center;
+        color: #FBFBFB;
+    }
 }
 
 .contact__us {
@@ -354,164 +359,124 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.quote {
-    margin-top: 97px;
-    margin-bottom: 126px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    max-width: 317px;
-    gap: 30px;
-}
-
-.quote__text {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #222224;
-}
-
-.subscribe__area {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.subscribe__title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 167.2%;
-    text-align: center;
-    color: #222224;
-}
-
-.subscribe__text {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 167.2%;
-    text-align: center;
-    color: #222224;
-}
-
-.insert__section {
-    margin-top: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.subscribe {
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    display: flex;
-    align-items: center;
-    color: #222224;
-    opacity: 0.67;
-    min-height: 46px;
-    background: #E1E1E1;
-    padding-left: 22px;
-    border: none;
-}
-
-.send {
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    background: #F16D7F;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
-    min-height: 50px;
-    padding-left: 7px;
-    padding-right: 7px;
-    border: none;
+    &__quote {
+        margin-top: 97px;
+        margin-bottom: 126px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        max-width: 317px;
+        gap: 30px;
+        &__text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: #222224;
+        }
+    }
+    &__subscribe {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        &__title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 167.2%;
+            text-align: center;
+            color: #222224;
+        }
+        &__text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 167.2%;
+            text-align: center;
+            color: #222224;
+        }
+        &__area {
+            margin-top: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__input {
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            display: flex;
+            align-items: center;
+            color: #222224;
+            opacity: 0.67;
+            min-height: 46px;
+            background: #E1E1E1;
+            padding-left: 22px;
+            border: none;
+        }
+        &__button {
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            background: #F16D7F;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+            min-height: 50px;
+            padding-left: 7px;
+            padding-right: 7px;
+            border: none;
+        }
+    }
 }
 
 .ending {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.copyright__text {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FBFBFB;
-}
-
-.social__network {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-}
-
-.network {
-    background-color: white;
-    min-width: 32px;
-    min-height: 32px;
-    display: flex;
-    justify-content: center;
-    transition: 0.3s;
-}
-
-.network:hover {
-    background-color: #F16D7F;
-    color: white;
-}
-
-.social__network {
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-
-// Catalog is described below
-.center {
-    padding-left: calc(50% - $widthSite/2)!important;
-    padding-right: calc(50% - $widthSite/2)!important;
-}
-
-.product {
-    width: 360px;
-    &__content {
-        background-color: #F8F8F8;
-        padding: 24px 16px;
+    &__copyright {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FBFBFB;
+    }
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        &__network {
+            background-color: white;
+            min-width: 32px;
+            min-height: 32px;
+            display: flex;
+            justify-content: center;
+            transition: 0.3s;
+        }
+        &__network:hover {
+            background-color: #F16D7F;
+            color: white;
+        }
     }
 }
 
-.header {
-    background-color: $backBlock;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.header__left {
-    display: flex;
-    align-items: center;
-    gap: 41px;
-}
-
+// Catalog is described below
 .top_head {
     background: #f8f3f4;
     padding-top: 60px;
@@ -519,14 +484,13 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.top-head__heading {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    color: $colorSelectSite;
+    &__heading {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: $colorSelectSite;
+    }
 }
 
 .breadcrumbs__link {

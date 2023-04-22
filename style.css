@@ -19,14 +19,22 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin-bottom: 0 !important;
+}
+
+.center {
+  padding-left: calc(50% - 570px) !important;
+  padding-right: calc(50% - 570px) !important;
+}
+
 .box-content {
   overflow: hidden;
 }
 
 .header {
   position: relative;
-  background: #222222;
-  display: flex;
+  background-color: #222;
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
@@ -222,7 +230,7 @@ a {
   position: absolute;
   top: 30%;
   left: 30%;
-  max-width: 116px;
+  max-width: 147px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -233,7 +241,7 @@ a {
   display: none;
 }
 .goods__frame__item__label:hover {
-  display: block;
+  display: flex;
 }
 .goods__frame__item__description {
   padding-top: 24px;
@@ -305,23 +313,21 @@ a {
   padding-right: 230px;
 }
 
-.list__benefits {
+.benefits {
   display: flex;
   align-items: center;
   padding-top: 104px;
   padding-bottom: 104px;
   gap: 30px;
 }
-
-.benefit {
+.benefits__item {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-
-.benefit__name {
+.benefits__name {
   margin-bottom: 16px;
   margin-top: 28px;
   font-style: normal;
@@ -330,8 +336,7 @@ a {
   line-height: 24px;
   color: #FBFBFB;
 }
-
-.benefit__about {
+.benefits__about {
   font-style: normal;
   font-weight: 300;
   font-size: 13.972px;
@@ -349,8 +354,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
 }
-
-.quote {
+.contact__us__quote {
   margin-top: 97px;
   margin-bottom: 126px;
   display: flex;
@@ -362,8 +366,7 @@ a {
   max-width: 317px;
   gap: 30px;
 }
-
-.quote__text {
+.contact__us__quote__text {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -371,16 +374,14 @@ a {
   text-align: center;
   color: #222224;
 }
-
-.subscribe__area {
+.contact__us__subscribe {
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   align-items: center;
 }
-
-.subscribe__title {
+.contact__us__subscribe__title {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -388,8 +389,7 @@ a {
   text-align: center;
   color: #222224;
 }
-
-.subscribe__text {
+.contact__us__subscribe__text {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -397,15 +397,13 @@ a {
   text-align: center;
   color: #222224;
 }
-
-.insert__section {
+.contact__us__subscribe__area {
   margin-top: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.subscribe {
+.contact__us__subscribe__input {
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   font-style: normal;
@@ -421,8 +419,7 @@ a {
   padding-left: 22px;
   border: none;
 }
-
-.send {
+.contact__us__subscribe__button {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   background: #F16D7F;
@@ -445,23 +442,22 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-
-.copyright__text {
+.ending__copyright {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #FBFBFB;
 }
-
-.social__network {
+.ending__social {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
-
-.network {
+.ending__social__network {
   background-color: white;
   min-width: 32px;
   min-height: 32px;
@@ -469,40 +465,9 @@ a {
   justify-content: center;
   transition: 0.3s;
 }
-
-.network:hover {
+.ending__social__network:hover {
   background-color: #F16D7F;
   color: white;
-}
-
-.social__network {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-.center {
-  padding-left: calc(50% - 570px) !important;
-  padding-right: calc(50% - 570px) !important;
-}
-
-.product {
-  width: 360px;
-}
-.product__content {
-  background-color: #F8F8F8;
-  padding: 24px 16px;
-}
-
-.header {
-  background-color: #222;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.header__left {
-  display: flex;
-  align-items: center;
-  gap: 41px;
 }
 
 .top_head {
@@ -513,8 +478,7 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-
-.top-head__heading {
+.top_head__heading {
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
