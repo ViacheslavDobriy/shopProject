@@ -1,9 +1,5 @@
-$colorSelectSite: #F16D7F;
-$widthSite: 1140px;
-$backBlock: #222;
-$colortext: #000;
-$gapGrid:30px;
-$widthBurgerMenu: 232px;
+@import 'vars';
+@import 'mixins';
 * {
     padding: 0;
     margin: 0;
@@ -77,12 +73,48 @@ p {
     background: #FFFFFF;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     width: 232px;
-    padding: 32px;
+    padding: 16px 17px 32px 32px;
     box-sizing: border-box;
     position: absolute;
     top: 78px;
     right: 0;
     transition: right .3s;
+    @include flex__column(24px);
+    z-index: 1;
+    &__top {
+        @include flex__column(9px);
+        &__criss-cross {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    &__menu {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: $colortext;
+    }
+    &__main {
+        @include flex__column(20px);
+    }
+    &__section[open] .nav__title {
+        color: $colorSelectSite;
+    }
+    &__title {
+        @include text_style_regular_14fz_17lh($colortext);
+    }
+    &__section-box {
+        @include flex__column(11px);
+        padding-top: 12px;
+        padding-left: 21.5px;
+    }
+    &__item {
+        @include text_style_regular_14fz_17lh($grayText);
+        &:hover {
+            color: $colorSelectSite;
+        }
+    }
 }
 
 .new__item::before {
@@ -115,7 +147,7 @@ p {
 }
 
 .slogan {
-    border-left: 12px solid #F16D7F;
+    border-left: 12px solid $colorSelectSite;
     padding-left: 16px;
     margin-top: 48%;
 }
@@ -137,7 +169,7 @@ p {
 }
 
 .pink__subtitle {
-    color: #F16D7F;
+    color: $colorSelectSite;
 }
 
 .offer {
@@ -153,8 +185,7 @@ p {
             max-width: 100%;
         }
         &__about {
-            display: flex;
-            flex-direction: column;
+            @include flex__column(0);
             justify-content: center;
             align-items: center;
             position: absolute;
@@ -164,12 +195,7 @@ p {
         }
         &__sale {
             text-align: center;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 19px;
-            text-align: center;
-            color: #FFFFFF;
+            @include text_style_regular_16fz_19lh($whiteColor);
         }
         &__subtitle {
             text-align: center;
@@ -178,7 +204,7 @@ p {
             font-size: 24px;
             line-height: 29px;
             text-align: center;
-            color: #F16D7F;
+            color: $colorSelectSite;
         }
     }
     &__item:hover {
@@ -191,14 +217,11 @@ p {
 
 .products {
     padding-bottom: 60px;
-    display: flex;
-    flex-direction: column;
+    @include flex__column(0);
     align-items: center;
     &__box {
         text-align: center;
-        gap: 6px;
-        display: flex;
-        flex-direction: column;
+        @include flex__column(6px);
         padding-bottom: 48px;
         &__title {
             font-style: normal;
@@ -208,11 +231,7 @@ p {
             color: #222222;
         }
         &__description {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 17px;
-            color: #9F9F9F;
+            @include text_style_regular_14fz_17lh(#9F9F9F);
         }
     }
 }
@@ -259,11 +278,7 @@ p {
 }
 
 .text_add {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #FFFFFF;
+    @include text_style_regular_14fz_17lh($whiteColor);
 }
 
 .name__good {
@@ -285,28 +300,20 @@ p {
 
 .price {
     margin-top: 16px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: $colorSelectSite;
+    @include text_style_regular_16fz_19lh($colorSelectSite);
 }
 
 .open__more {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #F26376;
+    @include text_style_regular_16fz_19lh($colorSelectSite);
     padding: 16px 39px 13px 39px;
     background-color: white;
-    border-color: #f26376;
+    border-color: $colorSelectSite;
     margin-top: 48px;
     transition: 0.5s;
 }
 
 .open__more:hover {
-    background-color: #f26376;
+    background-color: $colorSelectSite;
     color: white;
 }
 
@@ -326,8 +333,7 @@ p {
     padding-bottom: 104px;
     gap: 30px;
     &__item {
-        display: flex;
-        flex-direction: column;
+        @include flex__column(0);
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
@@ -362,14 +368,12 @@ p {
     &__quote {
         margin-top: 97px;
         margin-bottom: 126px;
-        display: flex;
-        flex-direction: column;
+        @include flex__column(30px);
         flex-wrap: wrap;
         align-content: center;
         justify-content: center;
         align-items: center;
         max-width: 317px;
-        gap: 30px;
         &__text {
             font-style: normal;
             font-weight: 400;
@@ -380,8 +384,7 @@ p {
         }
     }
     &__subscribe {
-        display: flex;
-        flex-direction: column;
+        @include flex__column(0);
         align-content: center;
         justify-content: center;
         align-items: center;
@@ -410,13 +413,9 @@ p {
         &__input {
             border-top-left-radius: 25px;
             border-bottom-left-radius: 25px;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 17px;
+            @include text_style_regular_14fz_17lh(#222224);
             display: flex;
             align-items: center;
-            color: #222224;
             opacity: 0.67;
             min-height: 46px;
             background: #E1E1E1;
@@ -426,15 +425,11 @@ p {
         &__button {
             border-top-right-radius: 25px;
             border-bottom-right-radius: 25px;
-            background: #F16D7F;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 17px;
+            background: $colorSelectSite;
+            @include text_style_regular_14fz_17lh($whiteColor);
             display: flex;
             align-items: center;
             text-align: center;
-            color: #FFFFFF;
             min-height: 50px;
             padding-left: 7px;
             padding-right: 7px;
@@ -448,11 +443,7 @@ p {
     align-items: center;
     justify-content: space-between;
     &__copyright {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        color: #FBFBFB;
+        @include text_style_regular_16fz_19lh(#FBFBFB);
     }
     &__social {
         display: flex;
@@ -470,13 +461,12 @@ p {
             transition: 0.3s;
         }
         &__network:hover {
-            background-color: #F16D7F;
+            background-color: $colorSelectSite;
             color: white;
         }
     }
 }
 
-// Catalog is described below
 .top_head {
     background: #f8f3f4;
     padding-top: 60px;
@@ -554,27 +544,17 @@ p {
         margin-top: 16px;
     }
     &__head {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        color: #6F6E6E;
+        @include text_style_regular_14fz_17lh($grayText);
         padding: 8px 11px 11px 11px;
         border-bottom: 1px solid #EBEBEB;
         border-left: 5px solid $colorSelectSite;
     }
     &__link-box {
-        display: flex;
-        flex-direction: column;
-        gap: 11px;
+        @include flex__column(11px);
         padding: 24px 16px;
     }
     &__link {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        color: #6F6E6E;
+        @include text_style_regular_14fz_17lh($grayText);
         &:hover {
             color: $colorSelectSite;
         }
@@ -600,23 +580,13 @@ p {
         display: flex;
         gap: 9px;
         align-items: center;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 16px;
-        color: #6F6E6E;
+        @include text_style_regular_16fz_19lh($grayText);
     }
     &__heading {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        color: #6F6E6E;
+        @include text_style_regular_14fz_17lh($grayText);
     }
     &__box {
-        display: flex;
-        flex-direction: column;
-        gap: 9px;
+        @include flex__column(9px);
         background: #FFFFFF;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
         padding: 7px 30px 11px 9px;
