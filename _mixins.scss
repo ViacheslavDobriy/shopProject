@@ -1,0 +1,21 @@
+@mixin flex__column($gap) {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}
+
+@mixin text_style_regular_14fz_17lh($color) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color;
+}
+
+@mixin text_style_regular_16fz_19lh($color) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $color;
+}
