@@ -491,7 +491,7 @@ p {
     color: #636363;
 }
 
-.breadcrumbs__link_site {
+.breadcrumbs:last-child .breadcrumbs__link {
     font-weight: 700;
     color: $colorSelectSite;
 }
