@@ -1,0 +1,244 @@
+h2 {
+    margin-bottom: 0!important;
+}
+
+input {
+    font-size: small;
+    line-height: normal;
+    // Это я сделал чтобы деражть в узде сумасшедший bootstrap
+}
+
+.cart {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 96px;
+    padding-bottom: 128px;
+    gap: 128px;
+    &__chosen {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        &__item {
+            display: flex;
+            gap: 31px;
+            box-shadow: 17px 19px 24px 0 rgb(0 0 0 / 13%);
+            &__info {
+                display: flex;
+                flex-direction: column;
+                gap: 42px;
+                padding-right: 22px;
+                padding-top: 22px;
+            }
+            &__title-box {
+                display: flex;
+                align-items: flex-start;
+                gap: 57px;
+                &__image {
+                    padding-top: 6px;
+                }
+            }
+            &__title {
+                max-width: 220px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 29px;
+                color: #222222;
+            }
+            &__about {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+            }
+            &__details {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 26px;
+                color: #575757;
+            }
+            &__price {
+                color: $colorSelectSite;
+            }
+            &__colour {
+                color: $grayText;
+            }
+            &__quantity-container {
+                display: flex;
+                gap: 24px;
+            }
+            &__quantity {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                color: #656565;
+                border: 1px solid #EAEAEA;
+                padding: 1px 17px 2px 16px;
+            }
+        }
+    }
+    &__order {
+        display: flex;
+        flex-direction: column;
+        gap: 57px;
+        padding-top: 17px;
+        min-width: 360px;
+        &__shipping-adress {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        &__title {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222;
+        }
+    }
+    &__get-quote {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 13px;
+        color: #4A4A4A;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        border: 1px solid #A4A4A4;
+        background: #FFFFFF;
+        max-width: 100px;
+        margin-top: 3px;
+        transition-duration: 0.3s;
+        &:hover {
+            background-color: $colorSelectSite;
+            color: $whiteColor;
+            border-color: $colorSelectSite;
+        }
+    }
+    &__payment-box {
+        background: #F5F3F3;
+        padding: 40px 44px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+#input-country {
+    padding-top: 13px;
+    padding-bottom: 16px;
+    padding-left: 17px;
+    border: 1px solid #A4A4A4;
+    &::placeholder {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+    }
+}
+
+#input-state {
+    padding-top: 13px;
+    padding-bottom: 16px;
+    padding-left: 17px;
+    border: 1px solid #A4A4A4;
+    &::placeholder {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #222222;
+    }
+}
+
+#input-postcode {
+    padding-top: 13px;
+    padding-bottom: 16px;
+    padding-left: 17px;
+    border: 1px solid #A4A4A4;
+    &::placeholder {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #222222;
+    }
+}
+
+.total {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 21px;
+    &__sub {
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+        margin-right: -10px;
+    }
+    &__text-small {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+        color: #4A4A4A;
+    }
+    &__grand {
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+        margin-right: -7px;
+    }
+    &__text-big {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+    }
+}
+
+.amount {
+    font-weight: 700;
+    color: $colorSelectSite;
+}
+
+.button-box {
+    padding-top: 17px;
+    border-top: 1px solid #E2E2E2;
+    &__button {
+        min-width: 273px;
+        min-height: 50px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        background-color: $colorSelectSite;
+        border: none;
+    }
+}
+
+.buttons-box {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+    &__button {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        border: 1px solid #A4A4A4;
+        background: #FFFFFF;
+        padding: 17px 40px;
+        transition-duration: 0.3s;
+        &:hover {
+            background-color: $colorSelectSite;
+            color: $whiteColor;
+            border-color: $colorSelectSite;
+        }
+    }
+}
