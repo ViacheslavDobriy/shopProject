@@ -3,10 +3,8 @@ h2 {
 }
 
 input {
-  margin: 0 !important;
-  font-family: inherit !important;
-  font-size: small !important;
-  line-height: normal !important;
+  font-size: small;
+  line-height: normal;
 }
 
 .cart {
@@ -100,11 +98,37 @@ input {
   line-height: 19px;
   color: #222222;
 }
+.cart__get-quote {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border: 1px solid #A4A4A4;
+  background: #FFFFFF;
+  max-width: 100px;
+  margin-top: 3px;
+  transition-duration: 0.3s;
+}
+.cart__get-quote:hover {
+  background-color: #F16D7F;
+  color: #FFFFFF;
+  border-color: #F16D7F;
+}
+.cart__payment-box {
+  background: #F5F3F3;
+  padding: 40px 44px;
+  display: flex;
+  flex-direction: column;
+}
 
 #input-country {
   padding-top: 13px;
   padding-bottom: 16px;
   padding-left: 17px;
+  border: 1px solid #A4A4A4;
 }
 #input-country::-moz-placeholder {
   font-style: normal;
@@ -125,6 +149,7 @@ input {
   padding-top: 13px;
   padding-bottom: 16px;
   padding-left: 17px;
+  border: 1px solid #A4A4A4;
 }
 #input-state::-moz-placeholder {
   font-style: normal;
@@ -145,6 +170,7 @@ input {
   padding-top: 13px;
   padding-bottom: 16px;
   padding-left: 17px;
+  border: 1px solid #A4A4A4;
 }
 #input-postcode::-moz-placeholder {
   font-style: normal;
@@ -161,6 +187,60 @@ input {
   color: #222222;
 }
 
+.total {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 21px;
+}
+.total__sub {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  margin-right: -10px;
+}
+.total__text-small {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+}
+.total__grand {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  margin-right: -7px;
+}
+.total__text-big {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.amount {
+  font-weight: 700;
+  color: #F16D7F;
+}
+
+.button-box {
+  padding-top: 17px;
+  border-top: 1px solid #E2E2E2;
+}
+.button-box__button {
+  min-width: 273px;
+  min-height: 50px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  background-color: #F16D7F;
+  border: none;
+}
+
 .buttons-box {
   display: flex;
   justify-content: space-between;
@@ -175,6 +255,12 @@ input {
   border: 1px solid #A4A4A4;
   background: #FFFFFF;
   padding: 17px 40px;
+  transition-duration: 0.3s;
+}
+.buttons-box__button:hover {
+  background-color: #F16D7F;
+  color: #FFFFFF;
+  border-color: #F16D7F;
 }
 
 * {

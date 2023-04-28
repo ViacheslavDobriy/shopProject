@@ -3,10 +3,9 @@ h2 {
 }
 
 input {
-    margin: 0!important;
-    font-family: inherit!important;
-    font-size: small!important;
-    line-height: normal!important;
+    font-size: small;
+    line-height: normal;
+    // Это я сделал чтобы деражть в узде сумасшедший bootstrap
 }
 
 .cart {
@@ -99,12 +98,38 @@ input {
             color: #222222;
         }
     }
+    &__get-quote {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 13px;
+        color: #4A4A4A;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        border: 1px solid #A4A4A4;
+        background: #FFFFFF;
+        max-width: 100px;
+        margin-top: 3px;
+        transition-duration: 0.3s;
+        &:hover {
+            background-color: $colorSelectSite;
+            color: $whiteColor;
+            border-color: $colorSelectSite;
+        }
+    }
+    &__payment-box {
+        background: #F5F3F3;
+        padding: 40px 44px;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 #input-country {
     padding-top: 13px;
     padding-bottom: 16px;
     padding-left: 17px;
+    border: 1px solid #A4A4A4;
     &::placeholder {
         font-style: normal;
         font-weight: 300;
@@ -118,6 +143,7 @@ input {
     padding-top: 13px;
     padding-bottom: 16px;
     padding-left: 17px;
+    border: 1px solid #A4A4A4;
     &::placeholder {
         font-style: normal;
         font-weight: 300;
@@ -131,12 +157,67 @@ input {
     padding-top: 13px;
     padding-bottom: 16px;
     padding-left: 17px;
+    border: 1px solid #A4A4A4;
     &::placeholder {
         font-style: normal;
         font-weight: 300;
         font-size: 13px;
         line-height: 16px;
         color: #222222;
+    }
+}
+
+.total {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 21px;
+    &__sub {
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+        margin-right: -10px;
+    }
+    &__text-small {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+        color: #4A4A4A;
+    }
+    &__grand {
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+        margin-right: -7px;
+    }
+    &__text-big {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+    }
+}
+
+.amount {
+    font-weight: 700;
+    color: $colorSelectSite;
+}
+
+.button-box {
+    padding-top: 17px;
+    border-top: 1px solid #E2E2E2;
+    &__button {
+        min-width: 273px;
+        min-height: 50px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        background-color: $colorSelectSite;
+        border: none;
     }
 }
 
@@ -153,5 +234,11 @@ input {
         border: 1px solid #A4A4A4;
         background: #FFFFFF;
         padding: 17px 40px;
+        transition-duration: 0.3s;
+        &:hover {
+            background-color: $colorSelectSite;
+            color: $whiteColor;
+            border-color: $colorSelectSite;
+        }
     }
 }
