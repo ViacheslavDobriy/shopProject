@@ -39,7 +39,7 @@ input {
                 }
             }
             &__title {
-                max-width: 220px;
+                max-width: 210px;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 24px;
@@ -122,6 +122,10 @@ input {
         padding: 40px 44px;
         display: flex;
         flex-direction: column;
+    }
+    &__remove path:hover {
+        fill: red;
+        cursor: pointer;
     }
 }
 
