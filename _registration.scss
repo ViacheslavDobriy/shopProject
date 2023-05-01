@@ -1,0 +1,114 @@
+.content {
+    display: flex;
+    padding-top: 64px;
+    padding-bottom: 96px;
+    gap: 128px;
+}
+
+.registration {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &_title {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222;
+        }
+        &_input {
+            padding-top: 13px;
+            padding-bottom: 16px;
+            padding-left: 17px;
+        }
+        &_clue {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #B1B1B1;
+        }
+    }
+    &__sex {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    &__button {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        max-width: 167px;
+        min-height: 50px;
+        background-color: $colorSelectSite;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        transition: 1s;
+        &:hover {
+            background-color: #fff;
+            border: 1px solid $colorSelectSite;
+        }
+        &:hover .registration__button_text {
+            color: $colorSelectSite;
+        }
+        &:hover svg path {
+            fill: $colorSelectSite;
+        }
+        &_text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+        }
+    }
+}
+
+.benefits-box {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    &__title {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        &_example {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+        }
+        &_specific {
+            list-style-image: url(img/check_mark.svg);
+        }
+    }
+}
+
+.sex-text {
+    margin-right: 10px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+}
