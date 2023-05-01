@@ -271,6 +271,121 @@ input {
   border-color: #F16D7F;
 }
 
+.content {
+  display: flex;
+  padding-top: 64px;
+  padding-bottom: 96px;
+  gap: 128px;
+}
+
+.registration {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.registration__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.registration__form_title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+.registration__form_input {
+  padding-top: 13px;
+  padding-bottom: 16px;
+  padding-left: 17px;
+}
+.registration__form_clue {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+.registration__sex {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.registration__button {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  max-width: 167px;
+  min-height: 50px;
+  background-color: #F16D7F;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  transition: 1s;
+}
+.registration__button:hover {
+  background-color: #fff;
+  border: 1px solid #F16D7F;
+}
+.registration__button:hover .registration__button_text {
+  color: #F16D7F;
+}
+.registration__button:hover svg path {
+  fill: #F16D7F;
+}
+.registration__button_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.benefits-box {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.benefits-box__title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.benefits-box__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.benefits-box__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.benefits-box__list_example {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.benefits-box__list_specific {
+  list-style-image: url(img/check_mark.svg);
+}
+
+.sex-text {
+  margin-right: 10px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+}
+
 * {
   padding: 0;
   margin: 0;
