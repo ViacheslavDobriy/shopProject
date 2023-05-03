@@ -386,6 +386,115 @@ input {
   color: #000000;
 }
 
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #EAEAEA;
+  background: #F7F7F7;
+  padding-top: 11px;
+}
+.main__pagination {
+  padding: 8px 8px;
+  border: none;
+}
+.main__pagination:hover .main__pagination_center .pagination-search path {
+  fill: #F16D7F;
+}
+.main__pagination_center {
+  display: flex;
+  justify-content: center;
+  min-width: 31px;
+  min-height: 31px;
+  align-items: center;
+}
+
+.about-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  margin-top: 65px;
+  margin-bottom: 128px;
+  border: 1px solid #EAEAEA;
+}
+.about-product__heading {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+}
+.about-product__line {
+  border: 1.5px solid #F16D7F;
+  width: 63px;
+}
+.about-product__line_under-price {
+  border: 1px solid #EAEAEA;
+  width: 641px;
+  margin-top: 52px;
+  margin-bottom: 52px;
+}
+.about-product__title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4D4D4D;
+}
+.about-product__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #5E5E5E;
+  width: 555px;
+  padding-top: 36px;
+  padding-bottom: 32px;
+}
+.about-product__price {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #EF5B70;
+}
+.about-product__sort {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  padding-bottom: 36px;
+}
+.about-product__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 23px;
+  padding: 15px 57px 9px 24px;
+  border: 1px solid #F16D7F;
+  background-color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F16D7F;
+  transition: 0.5s;
+}
+.about-product__button:hover {
+  background-color: #F16D7F;
+  color: white;
+}
+.about-product__button:hover svg path {
+  fill: white;
+}
+
+.padding-big {
+  padding-bottom: 128px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -411,9 +520,17 @@ p {
   margin-bottom: 0 !important;
 }
 
+hr {
+  margin: 0;
+}
+
 .center {
   padding-left: calc(50% - 570px) !important;
   padding-right: calc(50% - 570px) !important;
+}
+.center__margin {
+  margin-left: calc(50% - 570px);
+  margin-right: calc(50% - 570px);
 }
 
 .box-content {
