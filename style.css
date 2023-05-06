@@ -525,8 +525,8 @@ hr {
 }
 
 .center {
-  padding-left: calc(50% - 570px) !important;
-  padding-right: calc(50% - 570px) !important;
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
 }
 .center__margin {
   margin-left: calc(50% - 570px);
@@ -557,10 +557,13 @@ hr {
 .header__right {
   display: flex;
   align-items: center;
-  gap: 33px;
+  gap: 25px;
 }
 .header__link {
   position: relative;
+}
+.header__icon {
+  margin-right: 17px;
 }
 
 #burger {
@@ -651,17 +654,18 @@ hr {
   align-items: center;
 }
 
-.top__content {
+.top-content {
   display: flex;
   background: #F1E4E6;
   padding-left: calc(50% - 800px);
   padding-right: calc(50% - 800px);
 }
-.top__content__image {
-  width: 45%;
+.top-content__image {
+  width: 50%;
+  background: rgba(113, 103, 105, 0.08);
 }
 
-.title__part {
+.title-part {
   padding-left: 64px;
 }
 
@@ -732,7 +736,6 @@ hr {
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  text-align: center;
   color: #F16D7F;
 }
 .offer__item:hover {
@@ -1224,11 +1227,13 @@ hr {
     padding-right: calc(50% - 368px);
   }
   .header {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 18px 32px;
   }
-  .top__content {
+  .top-content {
     align-items: center;
+  }
+  .title-part {
+    padding-left: 40px;
   }
   .slogan {
     margin-top: 0%;
@@ -1247,8 +1252,10 @@ hr {
     line-height: 29px;
     color: #222222;
   }
-  .offer__frame {
-    gap: 19px;
+  .offer {
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 155px;
   }
   .products {
     padding-bottom: 64px;
@@ -1304,7 +1311,7 @@ hr {
     padding-left: 16px;
     padding-right: 16px;
   }
-  .header__icons {
+  .header__icon {
     display: none;
   }
   .header__link {
