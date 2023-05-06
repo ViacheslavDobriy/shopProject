@@ -87,7 +87,7 @@
 
     &__summary {
         display: flex;
-        align-items: center;
+        align-items: baseline;
         gap: 11px;
         padding-left: 16px;
     }
@@ -140,7 +140,7 @@
 
     &__summary {
         display: flex;
-        align-items: center;
+        align-items: baseline;
         gap: 10px;
     }
 
@@ -188,4 +188,27 @@
     line-height: 19px;
     color: #C4C4C4;
     border: none;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .filter-sort {
+        padding-top: 24px;
+        justify-content: space-between;
+        padding-bottom: 40px;
+        gap: 0;
+    }
+
+    .filter {
+        &__summary {    
+            padding-left: 0;
+        }
+    }
+    .goods__item_hide {
+        display: none;
+    }
+
+    .pagination {
+        margin-top: 40px;
+margin-bottom: 63px;
+    }
 }
