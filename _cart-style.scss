@@ -1,5 +1,5 @@
 h2 {
-    margin-bottom: 0!important;
+    margin-bottom: 0 !important;
 }
 
 input {
@@ -15,11 +15,13 @@ input {
     padding-top: 96px;
     padding-bottom: 128px;
     gap: 128px;
+
     &__items {
         display: flex;
         flex-direction: column;
         gap: 40px;
     }
+
     &__order {
         display: flex;
         flex-direction: column;
@@ -33,9 +35,11 @@ input {
     display: flex;
     gap: 31px;
     box-shadow: 17px 19px 24px 0 rgb(0 0 0 / 13%);
+
     &__image {
         padding-top: 6px;
     }
+
     &__info {
         display: flex;
         flex-direction: column;
@@ -43,23 +47,28 @@ input {
         padding-right: 22px;
         padding-top: 22px;
     }
+
     &__description-box {
         display: flex;
         flex-direction: column;
         gap: 6px;
     }
+
     &__details {
         font-style: normal;
         font-weight: 400;
         font-size: 22px;
         line-height: 26px;
         color: #575757;
+
         &_price {
             color: $colorSelectSite;
         }
+
         &_gray-colour {
             color: $grayText;
         }
+
         &_quantity {
             font-style: normal;
             font-weight: 400;
@@ -71,6 +80,7 @@ input {
             max-width: 50px;
         }
     }
+
     &__quantity-box {
         display: flex;
         gap: 24px;
@@ -81,6 +91,7 @@ input {
     display: flex;
     align-items: flex-start;
     gap: 57px;
+
     &__title {
         &_product {
             max-width: 210px;
@@ -91,6 +102,7 @@ input {
             color: #222222;
         }
     }
+
     &__remove {
         path:hover {
             fill: red;
@@ -103,6 +115,7 @@ input {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
     &__title {
         font-style: normal;
         font-weight: 300;
@@ -110,6 +123,7 @@ input {
         line-height: 19px;
         color: #222222;
     }
+
     &__get-quote {
         font-style: normal;
         font-weight: 300;
@@ -123,6 +137,7 @@ input {
         max-width: 100px;
         margin-top: 3px;
         transition-duration: 0.3s;
+
         &:hover {
             background-color: $colorSelectSite;
             color: $whiteColor;
@@ -136,23 +151,28 @@ input {
     padding: 40px 44px;
     display: flex;
     flex-direction: column;
+    max-height: 214px;
+
     &__total {
         display: flex;
         flex-direction: column;
         gap: 12px;
         padding-bottom: 21px;
+
         &_sub {
             display: flex;
             gap: 20px;
             justify-content: flex-end;
             margin-right: -10px;
         }
+
         &_grand {
             display: flex;
             gap: 20px;
             justify-content: flex-end;
             margin-right: -7px;
         }
+
         &_small-text {
             font-style: normal;
             font-weight: 400;
@@ -160,6 +180,7 @@ input {
             line-height: 13px;
             color: #4A4A4A;
         }
+
         &_big-text {
             font-style: normal;
             font-weight: 300;
@@ -180,6 +201,7 @@ input {
     padding-bottom: 16px;
     padding-left: 17px;
     border: 1px solid #A4A4A4;
+
     &::placeholder {
         font-style: normal;
         font-weight: 300;
@@ -194,6 +216,7 @@ input {
     padding-bottom: 16px;
     padding-left: 17px;
     border: 1px solid #A4A4A4;
+
     &::placeholder {
         font-style: normal;
         font-weight: 300;
@@ -208,6 +231,7 @@ input {
     padding-bottom: 16px;
     padding-left: 17px;
     border: 1px solid #A4A4A4;
+
     &::placeholder {
         font-style: normal;
         font-weight: 300;
@@ -220,6 +244,7 @@ input {
 .button-box {
     padding-top: 17px;
     border-top: 1px solid #E2E2E2;
+
     &__button {
         min-width: 273px;
         min-height: 50px;
@@ -237,6 +262,7 @@ input {
     display: flex;
     justify-content: space-between;
     padding-top: 32px;
+
     &__button {
         font-style: normal;
         font-weight: 300;
@@ -247,10 +273,46 @@ input {
         background: #FFFFFF;
         padding: 17px 40px;
         transition-duration: 0.3s;
+
         &:hover {
             background-color: $colorSelectSite;
             color: $whiteColor;
             border-color: $colorSelectSite;
         }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .cart {
+        flex-direction: column;
+        align-items: stretch;
+        padding-top: 60px;
+        gap: 64px;
+
+        &__order {
+            flex-direction: row;
+            gap: 15px;
+            padding-top: 0;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    .product {
+        &__info {
+            min-width: 443px;
+        }
+    }
+    .title-box {
+        justify-content: space-between;
+        gap: 0;
+    }
+    .buttons-box {
+        justify-content: center;
+        padding-top: 22px;
+        gap: 48px;
+    }
+
+    .shipping-box {
+        min-width: 360px;
     }
 }

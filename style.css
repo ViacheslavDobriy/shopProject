@@ -131,6 +131,7 @@ input {
   padding: 40px 44px;
   display: flex;
   flex-direction: column;
+  max-height: 214px;
 }
 .payment-box__total {
   display: flex;
@@ -271,6 +272,36 @@ input {
   border-color: #F16D7F;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cart {
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 60px;
+    gap: 64px;
+  }
+  .cart__order {
+    flex-direction: row;
+    gap: 15px;
+    padding-top: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .product__info {
+    min-width: 443px;
+  }
+  .title-box {
+    justify-content: space-between;
+    gap: 0;
+  }
+  .buttons-box {
+    justify-content: center;
+    padding-top: 22px;
+    gap: 48px;
+  }
+  .shipping-box {
+    min-width: 360px;
+  }
+}
 .content {
   display: flex;
   padding-top: 64px;
@@ -509,6 +540,7 @@ input {
   font-size: 24px;
   line-height: 29px;
   color: #F16D7F;
+  box-sizing: border-box;
 }
 
 .breadcrumbs {
