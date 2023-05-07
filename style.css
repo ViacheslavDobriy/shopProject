@@ -468,7 +468,6 @@ input {
   gap: 12px;
   padding-top: 64px;
   padding-bottom: 64px;
-  margin-top: 65px;
   margin-bottom: 128px;
   border: 1px solid #EAEAEA;
 }
@@ -543,10 +542,19 @@ input {
   fill: white;
 }
 
-.padding-big {
+.products_padding-big {
   padding-bottom: 128px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: center;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-product {
+    margin-top: 0;
+  }
+}
 .top_head {
   background: #f8f3f4;
   padding-top: 60px;
