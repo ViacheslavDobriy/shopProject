@@ -131,6 +131,7 @@ input {
   padding: 40px 44px;
   display: flex;
   flex-direction: column;
+  max-height: 214px;
 }
 .payment-box__total {
   display: flex;
@@ -271,6 +272,36 @@ input {
   border-color: #F16D7F;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cart {
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 60px;
+    gap: 64px;
+  }
+  .cart__order {
+    flex-direction: row;
+    gap: 15px;
+    padding-top: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .product__info {
+    min-width: 443px;
+  }
+  .title-box {
+    justify-content: space-between;
+    gap: 0;
+  }
+  .buttons-box {
+    justify-content: center;
+    padding-top: 22px;
+    gap: 48px;
+  }
+  .shipping-box {
+    min-width: 360px;
+  }
+}
 .content {
   display: flex;
   padding-top: 64px;
@@ -316,6 +347,7 @@ input {
   display: flex;
   flex-direction: row;
   gap: 20px;
+  margin-top: 8px;
   max-width: 167px;
   min-height: 50px;
   background-color: #F16D7F;
@@ -367,6 +399,7 @@ input {
   gap: 16px;
 }
 .benefits-box__list_example {
+  padding-left: 22px;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
@@ -386,6 +419,25 @@ input {
   color: #000000;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .content {
+    padding-top: 40px;
+    gap: 16px;
+  }
+  .benefits-box__title {
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 10px;
+  }
+  .benefits-box__text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .benefits-box__list_example {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
 .main {
   display: flex;
   justify-content: space-between;
@@ -416,7 +468,6 @@ input {
   gap: 12px;
   padding-top: 64px;
   padding-bottom: 64px;
-  margin-top: 65px;
   margin-bottom: 128px;
   border: 1px solid #EAEAEA;
 }
@@ -491,10 +542,19 @@ input {
   fill: white;
 }
 
-.padding-big {
+.products_padding-big {
   padding-bottom: 128px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: center;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-product {
+    margin-top: 0;
+  }
+}
 .top_head {
   background: #f8f3f4;
   padding-top: 60px;
@@ -509,6 +569,7 @@ input {
   font-size: 24px;
   line-height: 29px;
   color: #F16D7F;
+  box-sizing: border-box;
 }
 
 .breadcrumbs {

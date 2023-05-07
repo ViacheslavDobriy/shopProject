@@ -31,7 +31,6 @@
     gap: 12px;
     padding-top: 64px;
     padding-bottom: 64px;
-    margin-top: 65px;
     margin-bottom: 128px;
     border: 1px solid #EAEAEA;
 
@@ -109,6 +108,14 @@
     }
 }
 
-.padding-big {
+.products_padding-big {
     padding-bottom: 128px;
+    @include flex__column(0);
+    align-items: center;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .about-product {
+        margin-top: 0;
+    }
 }
