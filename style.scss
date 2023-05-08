@@ -35,7 +35,8 @@ hr {
 }
 
 h1,
-h3, ul {
+h3,
+ul {
     margin-bottom: 0px;
 }
 
@@ -61,9 +62,7 @@ h3, ul {
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
 
     &__left {
         display: flex;
@@ -649,5 +648,151 @@ h3, ul {
 }
 
 @media(min-width: 320px) and (max-width: 767px) {
+    .center {
+        padding-left: calc(50% - 144px);
+        padding-right: calc(50% - 144px);
+    }
 
+    .header {
+        padding-top: 18px;
+        padding-bottom: 18px;
+
+        &__icon {
+            display: none;
+        }
+
+        &__link {
+            display: none;
+        }
+    }
+
+    .top-content {
+        padding-left: 56px;
+        padding-right: 56px;
+
+        &__image {
+            display: none;
+        }
+    }
+
+    .title-part {
+        padding-left: 0;
+    }
+
+    .slogan {
+        margin-bottom: 148px;
+        margin-top: 148px;
+    }
+
+    .title {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .offer {
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+        padding-bottom: 64px;
+
+        &__img {
+            min-height: 111px;
+        }
+    }
+
+    .products {
+        padding-bottom: 96px;
+
+        &__box {
+            gap: 3px;
+            padding-bottom: 64px;
+        }
+    }
+
+    .goods {
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+
+        &__look {
+            max-width: 304px;
+        }
+    }
+
+    .open__more {
+        margin-top: 40px;
+    }
+
+    .benefits {
+        padding-top: 48px;
+        padding-bottom: 80px;
+        gap: 45px;
+        flex-direction: column;
+
+        &__name {
+            text-align: center;
+        }
+    }
+
+    .footer {
+        &__center {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+
+    .contact-us {
+        flex-direction: column;
+
+        &__quote-box {
+            margin-top: 64px;
+            margin-bottom: 59px;
+        }
+
+        &__text {
+            font-size: 18px;
+            line-height: 22px;
+
+            &_subscribe {
+                font-size: 14px;
+                line-height: 153.2%;
+            }
+        }
+
+        &__title {
+            font-size: 24px;
+            line-height: 153.2%;
+        }
+
+        &__subscribe-box {
+            padding-bottom: 110px;
+        }
+
+        &__area {
+            margin-top: 22px;
+        }
+
+        &__input {
+            min-width: 250px;
+        }
+
+        &__button {
+            min-width: 95px;
+        }
+    }
+
+    .ending {
+        flex-direction: column-reverse;
+        padding-bottom: 9px;
+
+        &__social {
+            padding-top: 43px;
+            padding-bottom: 40px;
+        }
+    }
 }

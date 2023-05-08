@@ -795,7 +795,8 @@ hr {
 }
 
 h1,
-h3, ul {
+h3,
+ul {
   margin-bottom: 0px;
 }
 
@@ -820,9 +821,7 @@ h3, ul {
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 .header__left {
   display: flex;
@@ -1394,5 +1393,122 @@ h3, ul {
   .ending {
     padding-left: 32px;
     padding-right: 32px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .center {
+    padding-left: calc(50% - 144px);
+    padding-right: calc(50% - 144px);
+  }
+  .header {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  .header__icon {
+    display: none;
+  }
+  .header__link {
+    display: none;
+  }
+  .top-content {
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+  .top-content__image {
+    display: none;
+  }
+  .title-part {
+    padding-left: 0;
+  }
+  .slogan {
+    margin-bottom: 148px;
+    margin-top: 148px;
+  }
+  .title {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .subtitle {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .offer {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    padding-bottom: 64px;
+  }
+  .offer__img {
+    min-height: 111px;
+  }
+  .products {
+    padding-bottom: 96px;
+  }
+  .products__box {
+    gap: 3px;
+    padding-bottom: 64px;
+  }
+  .goods {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+  }
+  .goods__look {
+    max-width: 304px;
+  }
+  .open__more {
+    margin-top: 40px;
+  }
+  .benefits {
+    padding-top: 48px;
+    padding-bottom: 80px;
+    gap: 45px;
+    flex-direction: column;
+  }
+  .benefits__name {
+    text-align: center;
+  }
+  .footer__center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .contact-us {
+    flex-direction: column;
+  }
+  .contact-us__quote-box {
+    margin-top: 64px;
+    margin-bottom: 59px;
+  }
+  .contact-us__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .contact-us__text_subscribe {
+    font-size: 14px;
+    line-height: 153.2%;
+  }
+  .contact-us__title {
+    font-size: 24px;
+    line-height: 153.2%;
+  }
+  .contact-us__subscribe-box {
+    padding-bottom: 110px;
+  }
+  .contact-us__area {
+    margin-top: 22px;
+  }
+  .contact-us__input {
+    min-width: 250px;
+  }
+  .contact-us__button {
+    min-width: 95px;
+  }
+  .ending {
+    flex-direction: column-reverse;
+    padding-bottom: 9px;
+  }
+  .ending__social {
+    padding-top: 43px;
+    padding-bottom: 40px;
   }
 }/*# sourceMappingURL=style.css.map */
