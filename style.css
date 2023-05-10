@@ -1456,6 +1456,9 @@ ul {
   .goods__look {
     max-width: 304px;
   }
+  .goods__description {
+    max-width: 304px;
+  }
   .open__more {
     margin-top: 40px;
   }
@@ -1498,10 +1501,10 @@ ul {
     margin-top: 22px;
   }
   .contact-us__input {
-    min-width: 250px;
+    min-width: 200px;
   }
   .contact-us__button {
-    min-width: 95px;
+    min-width: 88px;
   }
   .ending {
     flex-direction: column-reverse;

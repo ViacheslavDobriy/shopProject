@@ -722,6 +722,9 @@ ul {
         &__look {
             max-width: 304px;
         }
+        &__description {
+            max-width: 304px;
+        }
     }
 
     .open__more {
@@ -778,11 +781,11 @@ ul {
         }
 
         &__input {
-            min-width: 250px;
+            min-width: 200px;
         }
 
         &__button {
-            min-width: 95px;
+            min-width: 88px;
         }
     }
 
