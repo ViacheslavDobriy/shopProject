@@ -95,7 +95,7 @@ ul {
     padding: 16px 17px 32px 32px;
     box-sizing: border-box;
     position: absolute;
-    top: 73.5px;
+    top: 78px;
     right: 0;
     transition: right .3s;
     @include flex__column(24px);
@@ -491,6 +491,9 @@ ul {
     .header {
         padding: 18px 32px;
     }
+    .nav {
+        top: 75px;
+    }
     .top-content {
         align-items: center;
     }
@@ -594,6 +597,9 @@ ul {
             display: none;
         }
     }
+    .nav {
+        top: 75px;
+    }
     .top-content {
         padding-left: 56px;
         padding-right: 56px;
@@ -648,6 +654,11 @@ ul {
         &__description {
             max-width: 304px;
         }
+        &__item {
+            &_hide {
+                display: none;
+            }
+        }
     }
     .open__more {
         margin-top: 40px;
@@ -700,10 +711,10 @@ ul {
     }
     .ending {
         flex-direction: column-reverse;
-        padding-bottom: 9px;
+        padding-bottom: 24px;
         &__social {
             padding-top: 43px;
-            padding-bottom: 40px;
+            padding-bottom: 25px;
         }
     }
 }
