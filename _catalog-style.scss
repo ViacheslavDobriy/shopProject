@@ -1,7 +1,6 @@
 .top_head {
     background: #f8f3f4;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    height: 148px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,10 +64,14 @@
         padding-right: 16px;
         padding-bottom: 16px;
         padding-left: 16px;
+        position: absolute;
+        width: -webkit-fill-available;
+        left: 0;
     }
     &[open] {
         background: #FFFFFF;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        padding-left: 16px;
     }
     &[open] .filter__heading {
         color: $colorSelectSite;
@@ -193,9 +196,10 @@
 @media(min-width: 320px) and (max-width: 767px) {
     .top_head {
         flex-direction: column;
-        padding-top: 24px;
-        padding-bottom: 46px;
-        gap: 32px;
+        justify-content: center;
+        &_gap {
+            gap: 32px;
+        }
     }
     .breadcrumbs {
         padding-left: 0;
@@ -213,6 +217,12 @@
     .filter {
         padding-top: 0;
         width: fit-content;
+        &[open] {
+            box-shadow: none;
+        }
+        &__content {
+            width: -webkit-max-content;
+        }
         &__summary {
             padding-left: 0;
         }
