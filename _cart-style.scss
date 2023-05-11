@@ -341,7 +341,7 @@ input {
         padding-top: 40px;
         padding-bottom: 96px;
         gap: 48px;
-
+        align-items: center;
         &__items {
             gap: 32px;
         }
@@ -421,7 +421,7 @@ padding: 9px 10px;
     }
     .button-box {
         &__button {
-            min-width: 216px;
+            min-width: intrinsic;
         }
     }
 

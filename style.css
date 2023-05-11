@@ -322,6 +322,7 @@ input {
     padding-top: 40px;
     padding-bottom: 96px;
     gap: 48px;
+    align-items: center;
   }
   .cart__items {
     gap: 32px;
@@ -387,7 +388,7 @@ input {
     padding-left: 2px;
   }
   .button-box__button {
-    min-width: 216px;
+    min-width: intrinsic;
   }
 }
 .content {
@@ -526,6 +527,26 @@ input {
     line-height: 19px;
   }
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .content {
+    padding-top: 40px;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .benefits-box__title {
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 10px;
+  }
+  .benefits-box__text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .benefits-box__list_example {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
 .main {
   display: flex;
   justify-content: space-between;
@@ -641,6 +662,31 @@ input {
 @media (min-width: 768px) and (max-width: 1024px) {
   .about-product {
     margin-top: 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .main {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+  .main__product {
+    max-width: 281px;
+  }
+  .about-product {
+    margin-bottom: 64px;
+  }
+  .about-product__text {
+    width: 326px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .about-product__line_under-price {
+    margin-top: 20px;
+    margin-bottom: 36px;
+    width: 47vw;
+  }
+  .about-product__sort {
+    padding-bottom: 52px;
   }
 }
 .top_head {
@@ -1547,6 +1593,12 @@ ul {
     padding-left: 8px;
     padding-right: 8px;
   }
+  .center__product {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .header {
     padding-top: 18px;
     padding-bottom: 18px;
@@ -1561,8 +1613,8 @@ ul {
     top: 75px;
   }
   .top-content {
-    padding-left: 56px;
-    padding-right: 56px;
+    padding-left: 15vw;
+    padding-right: 15vw;
     justify-content: center;
   }
   .top-content__image {
@@ -1608,12 +1660,14 @@ ul {
     display: flex;
     gap: 16px;
     flex-direction: column;
+    align-items: center;
   }
   .goods__look {
-    max-width: 304px;
+    max-width: 100vw;
   }
-  .goods__description {
-    max-width: 304px;
+  .goods__item {
+    max-width: -moz-min-content;
+    max-width: min-content;
   }
   .goods__item_hide {
     display: none;

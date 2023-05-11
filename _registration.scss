@@ -138,3 +138,28 @@ line-height: 19px;
         }
     }
 }
+
+@media(min-width: 320px) and (max-width: 767px) {
+    .content {
+        padding-top: 40px;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .benefits-box {
+        &__title {
+            font-size: 16px;
+line-height: 19px;
+padding-bottom: 10px;
+        }
+        &__text {
+            font-size: 16px;
+line-height: 19px;
+        }
+        &__list {
+            &_example {
+                font-size: 16px;
+line-height: 19px;
+            }
+        }
+    }
+}

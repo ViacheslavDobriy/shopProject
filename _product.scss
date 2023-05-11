@@ -119,3 +119,31 @@
         margin-top: 0;
     }
 }
+
+@media(min-width: 320px) and (max-width: 767px) {
+    .main {
+        padding-top: 85px;
+        padding-bottom: 85px;
+        &__product {
+            max-width: 281px;
+        }
+    }
+    .about-product {
+        margin-bottom: 64px;
+        &__text {
+            width: 326px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        &__line {
+            &_under-price {
+                margin-top: 20px;
+                margin-bottom: 36px;
+                width: 47vw;
+            }
+        }
+        &__sort {
+            padding-bottom: 52px;
+        }
+    }
+}
