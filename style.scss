@@ -85,7 +85,7 @@ ul {
     }
 }
 
-#burger {
+#burger-button {
     position: absolute;
     left: -999999px;
     visibility: hidden;
@@ -93,6 +93,16 @@ ul {
     &:checked~.nav {
         right: -$widthBurgerMenu;
     }
+}
+
+#criss-cross {
+    position: absolute;
+    left: -999999px;
+    visibility: hidden;
+    
+    // &:checked~.nav{
+    //     right: -$widthBurgerMenu;
+    // }
 }
 
 .nav {
@@ -541,14 +551,6 @@ ul {
         padding-right: calc(50% - 368px);
     }
 
-    .header {
-        padding: 18px 32px;
-    }
-
-    .nav {
-        top: 75px;
-    }
-
     .top-content {
         align-items: center;
     }
@@ -727,8 +729,13 @@ padding-right: 20px;
             justify-content: center;
         }
 
+        &__item:hover {
+            transform: scale(1.05);
+        }
+
         &__img {
             min-height: 111px;
+            width: -webkit-fill-available;
         }
     }
 
@@ -783,7 +790,8 @@ padding-right: 20px;
 
     .contact-us {
         flex-direction: column;
-
+        background-position-x: -445px;
+        
         &__quote-box {
             margin-top: 64px;
             margin-bottom: 59px;
