@@ -435,7 +435,7 @@ input {
   background-color: #fff;
   border: 1px solid #F16D7F;
 }
-.registration__button:hover .registration__button_text {
+.registration__button:hover {
   color: #F16D7F;
 }
 .registration__button:hover svg path {
@@ -551,8 +551,8 @@ input {
 .main__pagination_center {
   display: flex;
   justify-content: center;
-  min-width: 31px;
-  min-height: 31px;
+  min-width: 47px;
+  min-height: 47px;
   align-items: center;
 }
 
