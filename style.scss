@@ -95,16 +95,6 @@ ul {
     }
 }
 
-#criss-cross {
-    position: absolute;
-    left: -999999px;
-    visibility: hidden;
-    
-    // &:checked~.nav{
-    //     right: -$widthBurgerMenu;
-    // }
-}
-
 .nav {
     background: #FFFFFF;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
@@ -125,6 +115,9 @@ ul {
     &__criss-cross {
         display: flex;
         justify-content: flex-end;
+        &:hover svg path {
+            fill: red;
+        }
     }
 
     &__menu {
@@ -237,6 +230,7 @@ ul {
 
     &__img {
         max-width: 100%;
+        object-fit: cover;
     }
 
     &__about {

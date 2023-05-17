@@ -545,7 +545,7 @@ input {
   padding: 8px 8px;
   border: none;
 }
-.main__pagination:hover .main__pagination_center .pagination-search path {
+.main__pagination:hover .pagination-search path {
   fill: #F16D7F;
 }
 .main__pagination_center {
@@ -942,6 +942,10 @@ input {
     font-size: 10px;
     line-height: 14px;
   }
+  .sort__check {
+    font-size: 10px;
+    line-height: 13px;
+  }
   .pagination {
     margin-top: 40px;
     margin-bottom: 64px;
@@ -1031,12 +1035,6 @@ ul {
   right: -232px;
 }
 
-#criss-cross {
-  position: absolute;
-  left: -999999px;
-  visibility: hidden;
-}
-
 .nav {
   background: #FFFFFF;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
@@ -1060,6 +1058,9 @@ ul {
 .nav__criss-cross {
   display: flex;
   justify-content: flex-end;
+}
+.nav__criss-cross:hover svg path {
+  fill: red;
 }
 .nav__menu {
   font-style: normal;
@@ -1172,6 +1173,8 @@ ul {
 }
 .offer__img {
   max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .offer__about {
   display: flex;
