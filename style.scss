@@ -155,8 +155,7 @@ ul {
     }
 }
 
-.new__item::before {
-    content: '5';
+.new__item {
     position: absolute;
     top: -7px;
     left: 27px;
@@ -317,6 +316,7 @@ ul {
         border-color: white;
         padding: 4px 14px;
         display: none;
+        cursor: pointer;
 
         &:hover {
             display: flex;
