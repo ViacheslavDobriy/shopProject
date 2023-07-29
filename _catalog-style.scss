@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     &__heading {
         font-style: normal;
         font-weight: 400;
@@ -17,10 +18,12 @@
 .breadcrumbs {
     padding-left: 8px;
     padding-top: 8px;
+
     &__ul {
         list-style-type: none;
         display: flex;
     }
+
     &__li:not(:last-child):after {
         content: '/';
         padding-right: 8px;
@@ -31,10 +34,12 @@
         line-height: 17px;
         color: #636363;
     }
+
     &__li:last-child .breadcrumbs__link {
         font-weight: 700;
         color: $colorSelectSite;
     }
+
     &__link {
         font-style: normal;
         font-weight: 300;
@@ -58,6 +63,7 @@
     box-sizing: border-box;
     position: relative;
     z-index: 10;
+
     &__content {
         background-color: #fff;
         padding-top: 0;
@@ -68,23 +74,28 @@
         width: -webkit-fill-available;
         left: 0;
     }
+
     &[open] {
         background: #FFFFFF;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
         padding-left: 16px;
     }
+
     &[open] .filter__heading {
         color: $colorSelectSite;
     }
+
     &[open] path {
         fill: $colorSelectSite;
     }
+
     &__summary {
         display: flex;
         align-items: baseline;
         gap: 11px;
         padding-left: 16px;
     }
+
     &__heading {
         font-style: normal;
         font-weight: 600;
@@ -92,25 +103,31 @@
         line-height: 17px;
         color: $colortext;
     }
+
     &__item {
         margin-top: 16px;
     }
+
     &__head {
         @include text_style_regular_14fz_17lh($grayText);
         padding: 8px 11px 11px 11px;
         border-bottom: 1px solid #EBEBEB;
         border-left: 5px solid $colorSelectSite;
     }
+
     &__link-box {
         @include flex__column(11px);
         padding: 24px 16px;
     }
+
     &__link {
         @include text_style_regular_14fz_17lh($grayText);
+
         &:hover {
             color: $colorSelectSite;
         }
     }
+
     &__item[open] .filter__head {
         color: $colorSelectSite;
     }
@@ -120,23 +137,28 @@
     padding-top: 12px;
     display: flex;
     gap: 18px;
+
     &__details {
         position: relative;
     }
+
     &__summary {
         display: flex;
         align-items: baseline;
         gap: 10px;
     }
+
     &__check {
         display: flex;
         gap: 9px;
         align-items: center;
         @include text_style_regular_16fz_19lh($grayText);
     }
+
     &__heading {
         @include text_style_regular_14fz_17lh($grayText);
     }
+
     &__box {
         @include flex__column(9px);
         background: #FFFFFF;
@@ -172,6 +194,24 @@
     border: none;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.button {
+    background: $colorSelectSite;
+    @include text_style_regular_14fz_17lh($whiteColor);
+    border: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    min-height: 50px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .filter-sort {
         padding-top: 24px;
@@ -179,14 +219,17 @@
         padding-bottom: 40px;
         gap: 0;
     }
+
     .filter {
         &__summary {
             padding-left: 0;
         }
     }
+
     .goods__item_hide {
         display: none;
     }
+
     .pagination {
         margin-top: 40px;
         margin-bottom: 63px;
@@ -197,58 +240,73 @@
     .top_head {
         flex-direction: column;
         justify-content: center;
+
         &_gap {
             gap: 32px;
         }
     }
+
     .breadcrumbs {
         padding-left: 0;
         padding-top: 0;
+
         &__ul {
             padding-left: 0;
         }
     }
+
     .filter-sort {
         padding-top: 24px;
         padding-bottom: 32px;
         justify-content: space-between;
         height: fit-content;
     }
+
     .filter {
         padding-top: 0;
         width: fit-content;
+
         &[open] {
             box-shadow: none;
         }
+
         &__content {
             width: -webkit-max-content;
         }
+
         &__summary {
             padding-left: 0;
         }
+
         &__summary svg {
             width: 37.5px;
             height: 25px;
         }
+
         &__heading {
             display: none;
         }
     }
+
     .sort {
         padding-top: 0;
         gap: 24px;
+
         &__summary {
             gap: 9px;
         }
+
         &__heading {
             font-size: 10px;
             line-height: 14px;
         }
+
         &__check {
             font-size: 10px;
             line-height: 13px;
         }
     }
+
     .pagination {
         margin-top: 40px;
         margin-bottom: 64px;

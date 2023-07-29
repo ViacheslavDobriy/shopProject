@@ -870,6 +870,28 @@ input {
   border: none;
 }
 
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.button {
+  background: #F16D7F;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  border: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  min-height: 50px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .filter-sort {
     padding-top: 24px;
