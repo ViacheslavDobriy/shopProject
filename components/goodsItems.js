@@ -69,8 +69,11 @@ const goods = {
         };
     },
     methods: {
-        name() {
-            
+        sortUp() {
+            this.products.sort((a,b) => a.price - b.price);
+        },
+        sortDown() {
+            this.products.sort((a,b) => b.price - a.price);
         }
     },
 
@@ -86,6 +89,10 @@ const goods = {
                 <p class="about__good">{{product.description}}</p>
                 <p class="price">{{product.currency}}{{product.price}}</p>
             </div>
+        </div>
+        <div class="buttons">
+            <button @click="sortUp" class="button">Сортировать по возрастанию</button>
+            <button @click="sortDown" class="button">Сортировать по убыванию</button>
         </div>
     `
 }
