@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts/stylesheet.css">
+    <script src="https://unpkg.com/vue@next"></script>
     <title>Catalog</title>
 </head>
 
@@ -218,8 +219,8 @@
                 </details>
             </div>
         </div>
-        <div class="goods center__mobile center">
-            <div class="goods__item">
+        <div class="goods center__mobile center" id="app">
+            <!-- <div class="goods__item">
                 <img src="img/goods1.svg" alt="goods 1" class="goods__look">
                 <div class="goods__label">
                     <img src="img/trolley.svg" alt="trolley">
@@ -326,7 +327,8 @@
                     <p class="about__good">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <p class="price">$52.00</p>
                 </div>
-            </div>
+            </div> -->
+            <goods></goods>
         </div>
     </div>
     <nav aria-label="Page navigation example" class="navigation_center">
@@ -392,6 +394,14 @@
         </div>
     </footer>
     <script src="scripts/script.js"></script>
+    <script src="components/goodsItems.js"></script>
+    <script>
+        Vue.createApp({
+                components: {
+                    goods
+                },
+            }).mount('#app');
+    </script>
 </body>
 
 </html>
